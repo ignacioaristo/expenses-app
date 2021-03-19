@@ -1,0 +1,74 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 250px;
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container-child {
+  margin: 55px;
+  background: black;
+}
+
+/* NewExpense */
+
+.expense-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input-form {
+  margin: 5px;
+  border-style: none;
+  border-bottom: 1px solid blue;
+}
+
+.input-form:focus {
+  margin: 5px;
+  border-style: none;
+  border-bottom: 1px solid blue;
+  outline: none;
+}
+
+.button {
+  background: blueviolet;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background: darkblue;
+  color: white;
+}
+
+/* ExpensesListTable */
+
+.expense-line-table-tr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 125px 0px 125px;
+  border-bottom: 1px solid lightskyblue;
+}
+
+.table-data {
+  margin-top: 15px;
+}
+
+/* TotalAmount */
+.total-amount-container {
+  margin-top: 50px;
+}
+
+.total-amount {
+  font-weight: bold;
+}
