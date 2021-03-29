@@ -10,13 +10,17 @@ const NewExpense = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.handleNewExpense({
-      id: uuid(),
-      concept: e.target.concept.value,
-      amount: e.target.amount.value
-    });
-    e.target.concept.value = "";
-    e.target.amount.value = "";
+    if (e.target.amount.value > 0){
+      props.handleNewExpense({
+        id: uuid(),
+        concept: e.target.concept.value,
+        amount: e.target.amount.value
+      });
+      e.target.concept.value = "";
+      e.target.amount.value = "";
+    } else {
+      alert("Invalid amount");
+    }
   };
 
   //Check if the input are filled

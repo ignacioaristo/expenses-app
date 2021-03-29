@@ -61,7 +61,22 @@
 }
 
 .table-data {
-  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.table-data-second-column {
+  display: flex;
+}
+
+.delete-button {
+  color: black;
+  background: none;
+  border: none;
+  font-size: 25px;
+  position: relative;
+  bottom: 5px;
 }
 
 /* TotalAmount */
