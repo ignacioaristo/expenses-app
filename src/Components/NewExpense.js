@@ -23,8 +23,6 @@ const NewExpense = (props) => {
     }
   };
 
-  //Check if the input are filled
-
   return (
     <div>
       <form className="expense-form" onSubmit={handleSubmit}>
@@ -34,6 +32,7 @@ const NewExpense = (props) => {
           name="concept"
           type="text"
           placeholder="Concept"
+          autoFocus
         />
         <input
           className="input-form"
