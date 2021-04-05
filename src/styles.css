@@ -31,6 +31,7 @@
   margin: 5px;
   border-style: none;
   border-bottom: 1px solid blue;
+  transition: 0.5s;
 }
 
 .input-form:focus {
@@ -38,6 +39,7 @@
   border-style: none;
   border-bottom: 1px solid blue;
   outline: none;
+  background: lightblue;
 }
 
 .button {
